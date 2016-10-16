@@ -1,0 +1,35 @@
+{
+  "name" : "mrprompt/caixa-economica-federal",
+  "description" : "Caixa Economica Federal Billet Payment",
+  "license" : "MIT",
+  "type": "library",
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "autoload" : {
+    "psr-4" : {
+      "MrPrompt\\CaixaEconomicaFederal\\": "src/"
+    }
+  },
+  "autoload-dev" : {
+    "psr-4" : {
+      "MrPrompt\\CaixaEconomicaFederal\\Tests\\": "tests/"
+    }
+  },
+  "authors" : [ 
+      {
+        "name"  : "Thiago Paes",
+        "email" : "mrprompt@gmail.com",
+        "role"  : "Developer"
+      }
+  ],
+  "require": {
+    "respect/validation"        : "0.6.1",
+    "andersondanilo/cnab_php"   : "1.3.10",
+    "kriansa/openboleto"        : "dev-master",
+    "knplabs/knp-snappy"        : "0.4.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.4.5",
+    "mockery/mockery": "dev-master@dev"
+  }
+}
