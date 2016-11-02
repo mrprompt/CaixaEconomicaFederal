@@ -85,7 +85,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
      */
     public function setCodeMustBeReturnNullWhenReceiveFloatValue()
     {
-        $this->customer->setCode(7.9837);
+        $this->assertNull($this->customer->setCode(7.9837));
     }
 
     /**

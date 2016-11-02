@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "acefeb754e82ada330633c9f5537255d",
-    "content-hash": "54e4aa60c4f68f129fec2e720a075471",
+    "hash": "774593ced47b7e877c57991e9261dce6",
+    "content-hash": "6aecab06bb4987c605e136105df6aead",
     "packages": [
         {
             "name": "andersondanilo/cnab_php",
@@ -2333,7 +2333,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "~5.6"
+        "php": "^5.6"
     },
     "platform-dev": []
 }
