@@ -41,7 +41,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::getCity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::getCity()
      */
     public function getCityReturnCityAttribute()
     {
@@ -52,7 +52,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setCity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setCity()
      */
     public function setCityReturnNull()
     {
@@ -63,7 +63,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setCity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setCity()
      */
     public function setCityReturnNullWhenEmpty()
     {
@@ -74,7 +74,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setCity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setCity()
      * @expectedException \InvalidArgumentException
      */
     public function setCityThrowsExceptionWhenExceedMaxLength()
@@ -87,7 +87,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::getState()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::getState()
      */
     public function getStateReturnStateAttribute()
     {
@@ -100,7 +100,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setState()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setState()
      */
     public function setStateReturnNull()
     {
@@ -109,7 +109,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setState()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setState()
      */
     public function setStateReturnNullWhenEmpty()
     {
@@ -118,7 +118,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setState()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setState()
      * @expectedException \InvalidArgumentException
      */
     public function setStateThrowsExceptionWhenDiferentOfTwoChars()
@@ -128,7 +128,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::getPostalCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::getPostalCode()
      */
     public function getPostalCodeReturnPostalCodeAttribute()
     {
@@ -141,7 +141,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setPostalCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setPostalCode()
      */
     public function setPostalCodeReturnNull()
     {
@@ -152,7 +152,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setPostalCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setPostalCode()
      * @expectedException \InvalidArgumentException
      */
     public function setPostalCodeThrowsExceptionWhenExceedMaxLength()
@@ -164,7 +164,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setPostalCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setPostalCode()
      * @expectedException \InvalidArgumentException
      */
     public function setPostalCodeThrowsExceptionWhenEmpty()
@@ -176,7 +176,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setPostalCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setPostalCode()
      * @expectedException \InvalidArgumentException
      */
     public function setPostalCodeThrowsExceptionWhenMinorOfMinLength()
@@ -188,7 +188,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::getAddress()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::getAddress()
      */
     public function getAddressReturnAddressAttribute()
     {
@@ -201,7 +201,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setAddress()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setAddress()
      */
     public function setAddressReturnNull()
     {
@@ -210,7 +210,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setAddress()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setAddress()
      */
     public function setAddressReturnNullWhemEmpty()
     {
@@ -219,7 +219,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setAddress()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setAddress()
      * @expectedException \InvalidArgumentException
      */
     public function setAddressThrowsExceptionWhenExceedMaxLength()
@@ -229,7 +229,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::getNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::getNumber()
      */
     public function getNumberReturnNumberAttribute()
     {
@@ -242,7 +242,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setNumber()
      */
     public function setNumberReturnNull()
     {
@@ -251,7 +251,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setNumber()
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenNotNumber()
@@ -261,7 +261,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::getDistrict()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::getDistrict()
      */
     public function getDistrictReturnDistrictAttribute()
     {
@@ -274,7 +274,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setDistrict()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setDistrict()
      */
     public function setDistrictReturnNull()
     {
@@ -283,7 +283,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setDistrict()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setDistrict()
      * @expectedException \InvalidArgumentException
      */
     public function setDistrictThrowsExceptionWhenExceedMaximumValue()
@@ -293,7 +293,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::getComplement()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::getComplement()
      */
     public function getComplementReturnComplementAttribute()
     {
@@ -306,7 +306,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setComplement()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setComplement()
      */
     public function setComplementReturnNull()
     {
@@ -315,7 +315,7 @@ class AddressTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Address::setComplement()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Address::setComplement()
      * @expectedException \InvalidArgumentException
      */
     public function setComplementThrowsExceptionWhenExceedMaximumValue()

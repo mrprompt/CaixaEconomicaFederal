@@ -42,8 +42,8 @@ class ClientTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Client::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Client::getCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Client::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Client::getCode()
      */
     public function getCodeReturnCodeAttribute()
     {
@@ -54,9 +54,9 @@ class ClientTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Client::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Client::setCode()
-     * @covers \CaixaEconomicaFederal\Common\Base\Client::getCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Client::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Client::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Client::getCode()
      */
     public function setCodeChangeCodeAttribute()
     {
@@ -67,8 +67,8 @@ class ClientTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Client::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Client::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Client::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Client::setCode()
      * @expectedException InvalidArgumentException
      */
     public function setCodeOnlyAcceptIntegerValue()

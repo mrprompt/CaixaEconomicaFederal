@@ -47,8 +47,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::getNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::getNumber()
      */
     public function getNumberReturnAccountAttribute()
     {
@@ -61,8 +61,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::getDigit()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::getDigit()
      */
     public function getDigitReturnAccountDigitAttribute()
     {
@@ -75,8 +75,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::getOperation()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::getOperation()
      */
     public function getOperationReturnAccountOperationAttribute()
     {
@@ -89,8 +89,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::getBank()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::getBank()
      */
     public function getBankReturnBankAttribute()
     {
@@ -103,8 +103,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::getSecurity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::getSecurity()
      */
     public function getSecurityReturnSecurityAttribute()
     {
@@ -117,8 +117,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::getHolder()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::getHolder()
      */
     public function getHolderReturnHolderAttribute()
     {
@@ -131,8 +131,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setNumber()
      */
     public function setNumberReturnNull()
     {
@@ -141,8 +141,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setNumber()
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenReceiveNotNumberValue()
@@ -152,8 +152,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setDigit()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setDigit()
      */
     public function setDigitReturnNull()
     {
@@ -162,8 +162,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setDigit()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setDigit()
      * @expectedException \InvalidArgumentException
      */
     public function setDigitThrowsExceptionWhenReceiveNotNumberValue()
@@ -173,8 +173,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setOperation()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setOperation()
      */
     public function setOperationReturnNull()
     {
@@ -183,8 +183,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setOperation()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setOperation()
      * @expectedException \InvalidArgumentException
      */
     public function setOperationThrowsExceptionWhenReceiveNotNumberValue()
@@ -194,8 +194,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setSecurity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setSecurity()
      */
     public function setSecurityReturnNull()
     {
@@ -204,8 +204,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setSecurity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setSecurity()
      * @expectedException \InvalidArgumentException
      */
     public function setSecurityThrowsExceptionWhenReceiveNotBooleanValue()
@@ -215,8 +215,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setBank()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setBank()
      */
     public function setBankReturnNull()
     {
@@ -225,8 +225,8 @@ class BankAccountTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\BankAccount::setHolder()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount::setHolder()
      */
     public function setHolderReturnNull()
     {

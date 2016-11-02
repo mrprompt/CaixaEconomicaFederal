@@ -42,8 +42,8 @@ class DocumentTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::getType
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::getType
      */
     public function getTypeMustBeReturnTypeAttribute()
     {
@@ -54,8 +54,8 @@ class DocumentTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::setType
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::setType
      */
     public function setTypeOnlyAcceptPreDefinedTypes()
     {
@@ -69,8 +69,8 @@ class DocumentTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::setType
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::setType
      * @expectedException \InvalidArgumentException
      */
     public function setTypeThrowsExceptionWhenInvalidtype()
@@ -80,8 +80,8 @@ class DocumentTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::setType
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::setType
      * @expectedException \InvalidArgumentException
      */
     public function setTypeThrowsExceptionWhenEmptyValue()
@@ -91,8 +91,8 @@ class DocumentTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::getNumber
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::getNumber
      */
     public function getNumberMustBeReturnNumberAttribute()
     {
@@ -103,8 +103,8 @@ class DocumentTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::setNumber
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::setNumber
      */
     public function setNumberMustBeReturnNull()
     {
@@ -115,8 +115,8 @@ class DocumentTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\Document::setNumber
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Document::setNumber
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenExceedMaxLength()

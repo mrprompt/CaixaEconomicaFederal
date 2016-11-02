@@ -42,7 +42,7 @@ class SellerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Seller::getCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Seller::getCode()
      */
     public function getCodeReturnCodeAttribute()
     {
@@ -53,7 +53,7 @@ class SellerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Seller::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Seller::setCode()
      */
     public function setCodeChangeCodeAttribute()
     {
@@ -64,7 +64,7 @@ class SellerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Seller::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Seller::setCode()
      * @expectedException \InvalidArgumentException
      */
     public function setCodeMustBeThrowsInvalidArgumentExceptionWhenEmpty()

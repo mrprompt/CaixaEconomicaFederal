@@ -42,7 +42,7 @@ class PurchaserTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Purchaser::getPurchaserStateRegistration()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Purchaser::getPurchaserStateRegistration()
      */
     public function getPurchaserStateRegistrationReturnPurchaserStateRegistrationAttribute()
     {
@@ -55,7 +55,7 @@ class PurchaserTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Purchaser::getPurchaserFantasyName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Purchaser::getPurchaserFantasyName()
      */
     public function getPurchaserFantasyNameReturnPurchaserFantasyNameAttribute()
     {
@@ -68,7 +68,7 @@ class PurchaserTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Purchaser::getPurchaserSocialReason()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Purchaser::getPurchaserSocialReason()
      */
     public function getPurchaserSocialReasonReturnPurchaserSocialReasonAttribute()
     {
@@ -81,7 +81,7 @@ class PurchaserTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Purchaser::setPurchaserStateRegistration()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Purchaser::setPurchaserStateRegistration()
      */
     public function setPurchaserStateRegistrationReturnEmpty()
     {
@@ -92,7 +92,7 @@ class PurchaserTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Purchaser::setPurchaserFantasyName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Purchaser::setPurchaserFantasyName()
      */
     public function setPurchaserFantasyNameReturnEmpty()
     {
@@ -103,7 +103,7 @@ class PurchaserTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Purchaser::setPurchaserSocialReason()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Purchaser::setPurchaserSocialReason()
      */
     public function setPurchaserSocialReasonReturnEmpty()
     {

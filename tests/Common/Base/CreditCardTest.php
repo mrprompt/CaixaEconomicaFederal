@@ -59,8 +59,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::getNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::getNumber()
      */
     public function getNumberReturnNumberAttribute()
     {
@@ -72,8 +72,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
     /**
      * @test
      * @dataProvider loadCardsProvider
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::setNumber()
      */
     public function setNumberReturnNull($card)
     {
@@ -82,8 +82,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::setNumber()
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenNotValidCard()
@@ -93,8 +93,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::setNumber()
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenEmpty()
@@ -104,8 +104,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::setNumber()
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenNotNumericValue()
@@ -115,8 +115,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::getValidate()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::getValidate()
      */
     public function getValidateMustBeReturnCreditCardValidateAttribute()
     {
@@ -129,8 +129,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::setValidate()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::setValidate()
      */
     public function setValidateMustBeReturnNull()
     {
@@ -139,8 +139,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::getSecurityNumber
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::getSecurityNumber
      */
     public function getSecurityNumberMustBeReturnCreditCardSecurityNumberAttribute()
     {
@@ -152,8 +152,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
     /**
      * @test
      * @dataProvider loadCardsProvider
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::setSecurityNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::setSecurityNumber()
      */
     public function setSecurityNumberMustBeReturnNull($card)
     {
@@ -162,8 +162,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::setSecurityNumber
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::setSecurityNumber
      * @expectedException \InvalidArgumentException
      */
     public function setSecurityNumberrThrowsExceptionNotNumericValue()
@@ -173,8 +173,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::getFlag()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::getFlag()
      */
     public function getFlagMustBeReturnFlagAttribute()
     {
@@ -186,8 +186,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
     /**
      * @test
      * @dataProvider loadCardsProvider
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::setFlag()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::setFlag()
      */
     public function setFlagMustBeReturnNull($card)
     {
@@ -198,8 +198,8 @@ class CreditCardTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\CreditCard::setFlag()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard::setFlag()
      * @expectedException \InvalidArgumentException
      */
     public function setFlagMustBeReturnThrowsExceptionWhenEmpty()

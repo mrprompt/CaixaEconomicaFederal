@@ -42,7 +42,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::getAgency()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::getAgency()
      */
     public function getAgencyReturnAgencyAttribute()
     {
@@ -55,7 +55,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::setAgency()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::setAgency()
      */
     public function setAgencyReturnNull()
     {
@@ -64,7 +64,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::setAgency()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::setAgency()
      * @expectedException \InvalidArgumentException
      */
     public function setAgencyThrowsExceptionWhenNotNumericValue()
@@ -74,7 +74,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::getDigit()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::getDigit()
      */
     public function getDigitReturnDigitAttribute()
     {
@@ -87,7 +87,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::setDigit()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::setDigit()
      */
     public function setDigitReturnNull()
     {
@@ -96,7 +96,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::setDigit()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::setDigit()
      * @expectedException \InvalidArgumentException
      */
     public function setDigitThrowsExceptionWhenNotNumericValue()
@@ -106,7 +106,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::getCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::getCode()
      */
     public function getCodeMustBeReturnCodeAttribute()
     {
@@ -117,7 +117,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::setCode()
      */
     public function setCodeMustBeReturnNull()
     {
@@ -128,7 +128,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::setCode()
      * @expectedException \InvalidArgumentException
      */
     public function setCodeMustBeThrowsExceptionWhenReceiveStringName()
@@ -138,7 +138,7 @@ class BankTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Bank::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Bank::setCode()
      * @expectedException \InvalidArgumentException
      */
     public function setCodeMustBeThrowsExceptionWhenReceiveInvalidCode()

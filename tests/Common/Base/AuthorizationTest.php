@@ -31,7 +31,7 @@ class AuthorizationTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Authorization::getNumber
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Authorization::getNumber
      */
     public function getNumberMustBeReturnNumberAttribute()
     {
@@ -42,7 +42,7 @@ class AuthorizationTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Authorization::setNumber
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Authorization::setNumber
      */
     public function setNumberMustBeReturnNull()
     {
@@ -53,7 +53,7 @@ class AuthorizationTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Authorization::setNumber
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Authorization::setNumber
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenExceedMaximumValue()

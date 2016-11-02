@@ -44,8 +44,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getDocument()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getDocument()
      */
     public function getDocumentReturnDocumentAttribute()
     {
@@ -58,8 +58,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setDocument()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setDocument()
      */
     public function setDocumentReturnEmpty()
     {
@@ -70,8 +70,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getHomePhone()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getHomePhone()
      */
     public function getHomePhoneReturnHomePhoneAttribute()
     {
@@ -84,8 +84,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setHomePhone()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setHomePhone()
      */
     public function setHomePhoneReturnEmpty()
     {
@@ -98,8 +98,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getHomePhoneSecondary()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getHomePhoneSecondary()
      */
     public function getHomePhoneSecondaryReturnHomePhoneSecondaryAttribute()
     {
@@ -112,8 +112,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setHomePhoneSecondary()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setHomePhoneSecondary()
      */
     public function setHomePhoneSecondaryReturnEmpty()
     {
@@ -126,8 +126,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getName()
      */
     public function getNameReturnNameAttribute()
     {
@@ -138,8 +138,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setName()
      */
     public function setNameReturnEmpty()
     {
@@ -150,8 +150,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getEmail()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getEmail()
      */
     public function getEmailReturnEmailAttribute()
     {
@@ -164,8 +164,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setEmail()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setEmail()
      */
     public function setEmailReturnEmpty()
     {
@@ -178,7 +178,7 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getCellPhone()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getCellPhone()
      */
     public function getCellPhoneReturnCellPhoneAttribute()
     {
@@ -191,8 +191,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setCellPhone()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setCellPhone()
      */
     public function setCellPhoneReturnEmpty()
     {
@@ -205,8 +205,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getFatherName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getFatherName()
      */
     public function getFatherNameReturnFatherNameAttribute()
     {
@@ -219,8 +219,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setFatherName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setFatherName()
      */
     public function setFatherNameReturnEmpty()
     {
@@ -231,8 +231,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getMotherName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getMotherName()
      */
     public function getMotherNameReturnMotherNameAttribute()
     {
@@ -245,8 +245,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setMotherName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setMotherName()
      */
     public function setMotherNameReturnEmpty()
     {
@@ -257,8 +257,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getPerson()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getPerson()
      */
     public function getPersonReturnPersonAttribute()
     {
@@ -271,8 +271,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setPerson()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setPerson()
      */
     public function setPersonReturnEmpty()
     {
@@ -283,8 +283,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setPerson()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setPerson()
      */
     public function setPersonThrowsExceptionWhenEmpty()
     {
@@ -295,8 +295,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getSalaried()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getSalaried()
      */
     public function getSalariedMustBeReturnSalariedAttribute()
     {
@@ -307,8 +307,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setSalaried()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setSalaried()
      */
     public function setSalariedMustBeReturnNull()
     {
@@ -321,8 +321,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getBirth()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getBirth()
      */
     public function getBirthMustBeReturnBirthAttribute()
     {
@@ -334,8 +334,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setBirth()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setBirth()
      */
     public function setBirthMustBeReturnNull()
     {
@@ -348,8 +348,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::getAddress()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::getAddress()
      */
     public function getAddressMustBeReturnAddressAttribute()
     {
@@ -361,8 +361,8 @@ class PersonTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Person::setAddress()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setAddress()
      */
     public function setAddressMustBeReturnNull()
     {

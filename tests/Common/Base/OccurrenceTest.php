@@ -41,7 +41,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::getType()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::getType()
      */
     public function getTypeMustBeReturnTypeAttribute()
     {
@@ -55,7 +55,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setType()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setType()
      */
     public function setTypeOnlyAcceptPreDefinedTypes()
     {
@@ -69,7 +69,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setType()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setType()
      * @expectedException \InvalidArgumentException
      */
     public function setTypeThrowsExceptionWhenNotPredefinedTypes()
@@ -81,7 +81,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setType()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setType()
      * @expectedException \InvalidArgumentException
      */
     public function setTypeThrowsExceptionWhenEmpty()
@@ -93,7 +93,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::getReturn()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::getReturn()
      */
     public function getReturnMustBeReturnReturnAttribute()
     {
@@ -104,7 +104,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
      */
     public function setReturnMustBeReturnNullWhenReceiveNumericValue()
     {
@@ -113,7 +113,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
      */
     public function setReturnMustBeReturnNullWhenNotReceiveAnyParameter()
     {
@@ -122,7 +122,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
      * @expectedException \InvalidArgumentException
      */
     public function setReturnThrowsExceptionWhenReceiveNonNumericValue()
@@ -134,7 +134,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
      */
     public function setReturnReturnNullWhenReceiveEmptyValue()
     {
@@ -143,7 +143,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setReturn()
      */
     public function setReturnReturnNullWhenReceiveNumericAsStringValue()
     {
@@ -152,7 +152,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setDescription()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setDescription()
      */
     public function setDescriptionMustBeReturnNullWhenReceiveStringValue()
     {
@@ -161,7 +161,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::getDescription()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::getDescription()
      */
     public function getDescriptionMustBeReturnDescriptionAttribute()
     {
@@ -172,7 +172,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setDescription()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setDescription()
      */
     public function setDescriptionReturnNullWhenReceiveEmptyValue()
     {
@@ -181,7 +181,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setDescription()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setDescription()
      */
     public function setDescriptionReturnNullWhenNotReceiveAnyParameter()
     {
@@ -190,7 +190,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setDescription()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setDescription()
      * @expectedException \InvalidArgumentException
      */
     public function setDescriptionThrowsExceptionWhenNotReceiveNotString()
@@ -200,7 +200,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::getDate()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::getDate()
      */
     public function getDateMustBeReturnDateAttribute()
     {
@@ -212,7 +212,7 @@ class OccurrenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Occurrence::setDate()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence::setDate()
      */
     public function setDateMustBeReturnNull()
     {

@@ -42,8 +42,8 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::getNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::getNumber()
      */
     public function getNumberReturnNumberAttribute()
     {
@@ -56,8 +56,8 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::setNumber()
      */
     public function setNumberReturnNull()
     {
@@ -66,8 +66,8 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::setNumber()
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenEmpty()
@@ -77,8 +77,8 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::getRead()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::getRead()
      */
     public function getReadReturnReadAttribute()
     {
@@ -91,8 +91,8 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::setRead()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::setRead()
      */
     public function setReadReturnNull()
     {
@@ -101,8 +101,8 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::getMaturity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::getMaturity()
      */
     public function getMaturityReturnMaturityAttribute()
     {
@@ -115,8 +115,8 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\ConsumerUnity::setMaturity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity::setMaturity()
      */
     public function setMaturityReturnNull()
     {
@@ -125,8 +125,8 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Consumerunity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Consumerunity::getCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Consumerunity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Consumerunity::getCode()
      */
     public function getCodeReturnCodeAttribute()
     {
@@ -137,9 +137,9 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Consumerunity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Consumerunity::setCode()
-     * @covers \CaixaEconomicaFederal\Common\Base\Consumerunity::getCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Consumerunity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Consumerunity::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Consumerunity::getCode()
      */
     public function setCodeChangeCodeAttribute()
     {
@@ -150,8 +150,8 @@ class ConsumerUnityTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Consumerunity::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Consumerunity::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Consumerunity::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Consumerunity::setCode()
      * @expectedException InvalidArgumentException
      */
     public function setCodeOnlyAcceptIntegerValue()

@@ -42,7 +42,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::getCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::getCode()
      */
     public function getCodeReturnCodeAttribute()
     {
@@ -53,7 +53,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setCode()
      */
     public function setCodeMustBeReturnNullWhenReceiveIntegerValue()
     {
@@ -62,7 +62,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setCode()
      */
     public function setCodeMustBeReturnNullWhenReceiveNotNumericValue()
     {
@@ -71,7 +71,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setCode()
      * @expectedException \InvalidArgumentException
      */
     public function setCodeOnlyThrowsExceptionWhenEmpty()
@@ -81,7 +81,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setCode()
      */
     public function setCodeMustBeReturnNullWhenReceiveFloatValue()
     {
@@ -90,7 +90,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::getIdentityNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::getIdentityNumber()
      */
     public function getIdentityNumberReturnIdentityNumberAttribute()
     {
@@ -101,7 +101,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setIdentityNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setIdentityNumber()
      */
     public function setIdentityNumberReturnNullWhenReceiveNumericValue()
     {
@@ -111,7 +111,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setIdentityNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setIdentityNumber()
      */
     public function setIdentityNumberMustBeNonNumericValue()
     {
@@ -122,7 +122,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setIdentityNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setIdentityNumber()
      */
     public function setIdentityNumberMustBeEmpty()
     {
@@ -133,7 +133,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::getWorkingDays()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::getWorkingDays()
      */
     public function getWorkingDaysReturnWorkingDaysAttribute()
     {
@@ -144,7 +144,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setWorkingDays()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setWorkingDays()
      */
     public function setWorkingDaysReturnNullWhenReceiveNumericValue()
     {
@@ -153,7 +153,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setWorkingDays()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setWorkingDays()
      * @expectedException \InvalidArgumentException
      */
     public function setWorkingDaysThrowsExceptionWhenNotNumericValue()
@@ -163,7 +163,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setWorkingDays()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setWorkingDays()
      * @expectedException \InvalidArgumentException
      */
     public function setWorkingDaysThrowsExceptionWhenEmpty()
@@ -173,7 +173,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setWorkingDays()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setWorkingDays()
      * @expectedException \InvalidArgumentException
      */
     public function setWorkingDaysThrowsExceptionWhenNotInteger()
@@ -183,7 +183,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::getHelpfulMaturity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::getHelpfulMaturity()
      */
     public function getHelpfulMaturityReturnHelpfulMaturityAttribute()
     {
@@ -194,7 +194,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setHelpfulMaturity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setHelpfulMaturity()
      */
     public function setHelpfulMaturityReturnNullWhenReceiveBooleanValue()
     {
@@ -203,7 +203,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setHelpfulMaturity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setHelpfulMaturity()
      * @expectedException \InvalidArgumentException
      */
     public function setHelpfulMaturityThrowsExceptionWhenNotBooleanValue()
@@ -213,7 +213,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setHelpfulMaturity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setHelpfulMaturity()
      */
     public function setHelpfulMaturityReturnNullWhenReceiveEmpty()
     {
@@ -222,7 +222,7 @@ class CustomerTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Customer::setHelpfulMaturity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setHelpfulMaturity()
      * @expectedException \InvalidArgumentException
      */
     public function setHelpfulMaturityThrowsExceptionWhenNumeric()

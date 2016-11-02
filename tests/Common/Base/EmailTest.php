@@ -43,8 +43,8 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::getAddress()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::getAddress()
      */
     public function getAddressReturnAddressAttribute()
     {
@@ -57,8 +57,8 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::setAddress()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::setAddress()
      */
     public function setAddressReturnNull()
     {
@@ -71,8 +71,8 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::setAddress()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::setAddress()
      * @expectedException \InvalidArgumentException
      */
     public function setAddressThrowsExceptionWhenAddressIsInvalid()
@@ -86,8 +86,8 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::getPrimary()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::getPrimary()
      */
     public function getPrimaryReturnPrimaryAttribute()
     {
@@ -98,8 +98,8 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::isPrimary()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::isPrimary()
      */
     public function isPrimaryReturnPrimaryAttribute()
     {
@@ -110,8 +110,8 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::setPrimary()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::setPrimary()
      */
     public function setPrimaryReturnNull()
     {
@@ -122,8 +122,8 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Email::setPrimary()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Email::setPrimary()
      * @expectedException \InvalidArgumentException
      */
     public function setPrimaryThrowsExceptionPrimaryIsNotBoolean()

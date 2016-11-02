@@ -43,8 +43,8 @@ class PhoneTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::getNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::getNumber()
      */
     public function getNumberReturnNumberAttribute()
     {
@@ -55,8 +55,8 @@ class PhoneTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::setNumber()
      */
     public function setNumberReturnNull()
     {
@@ -69,8 +69,8 @@ class PhoneTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::setNumber()
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenNumberIsToShort()
@@ -84,8 +84,8 @@ class PhoneTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::setNumber()
      * @expectedException \InvalidArgumentException
      */
     public function setNumberThrowsExceptionWhenNumberIsToLong()
@@ -99,8 +99,8 @@ class PhoneTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::getType()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::getType()
      */
     public function getTypeReturnTypeAttribute()
     {
@@ -111,8 +111,8 @@ class PhoneTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::setType()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::setType()
      */
     public function setTypeReturnNull()
     {
@@ -125,8 +125,8 @@ class PhoneTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Phone::setType()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Phone::setType()
      * @expectedException \InvalidArgumentException
      */
     public function setTypeThrowsExceptionWhenNotInPreDefinedConstants()

@@ -43,7 +43,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::getMaturity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::getMaturity()
      */
     public function getMaturity()
     {
@@ -56,7 +56,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::setMaturity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::setMaturity()
      */
     public function setMaturity()
     {
@@ -67,7 +67,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::getPrice()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::getPrice()
      */
     public function getPrice()
     {
@@ -80,7 +80,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::setPrice()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::setPrice()
      */
     public function setPrice()
     {
@@ -91,7 +91,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::setPrice()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::setPrice()
      * @expectedException \InvalidArgumentException
      */
     public function setPriceThrowsExceptionWhenReceiveNotNumericValue()
@@ -101,7 +101,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::getKey()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::getKey()
      */
     public function getKey()
     {
@@ -114,7 +114,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::setKey()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::setKey()
      */
     public function setKey()
     {
@@ -125,7 +125,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::setKey()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::setKey()
      * @expectedException \InvalidArgumentException
      */
     public function setKeyThrowsExceptionWhenReceiveNotNumericValue()
@@ -135,7 +135,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::getQuantity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::getQuantity()
      */
     public function getQuantity()
     {
@@ -148,7 +148,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::setQuantity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::setQuantity()
      */
     public function setQuantity()
     {
@@ -159,7 +159,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::setQuantity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::setQuantity()
      * @expectedException \InvalidArgumentException
      */
     public function setQuantityThrowsExceptionWhenReceiveNotNumericValue()
@@ -169,7 +169,7 @@ class ParcelTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcel::setQuantity()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel::setQuantity()
      * @expectedException \InvalidArgumentException
      */
     public function setQuantityThrowsExceptionWhenReceiveEmptyValue()

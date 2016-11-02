@@ -44,8 +44,8 @@ class ParcelsTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcels::__construct
-     * @covers \CaixaEconomicaFederal\Common\Base\Parcels::addParcel
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcels::__construct
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcels::addParcel
      */
     public function addParcelMustReturnNullWhenReceiveParcelObject()
     {

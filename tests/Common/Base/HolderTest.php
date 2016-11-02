@@ -42,7 +42,7 @@ class HolderTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Holder::getCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Holder::getCode()
      */
     public function getCodeReturnCodeAttribute()
     {
@@ -53,7 +53,7 @@ class HolderTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Holder::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Holder::setCode()
      */
     public function setCodeMustBeReturnNullWhenReceiveIntegerValue()
     {
@@ -62,7 +62,7 @@ class HolderTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Holder::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Holder::setCode()
      * @expectedException \InvalidArgumentException
      */
     public function setCodeThrowsExceptionWhenNotNumericValue()
@@ -72,7 +72,7 @@ class HolderTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Holder::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Holder::setCode()
      * @expectedException \InvalidArgumentException
      */
     public function setCodeOnlyThrowsExceptionWhenEmpty()
@@ -82,7 +82,7 @@ class HolderTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Holder::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Holder::setCode()
      * @expectedException \InvalidArgumentException
      */
     public function setCodeOnlyThrowsExceptionWhenNotIntegerValue()

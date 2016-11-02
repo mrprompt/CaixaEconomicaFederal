@@ -13,7 +13,7 @@ class NumberTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Util\Number::zeroFill
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Util\Number::zeroFill
      */
     public function zeroFillMustBeReturnExactLengthWithoutFillSideParam()
     {
@@ -24,7 +24,7 @@ class NumberTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Util\Number::zeroFill
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Util\Number::zeroFill
      */
     public function zeroFillMustBeReturnExactStringWhenLengthIsEqualsWithoutFillSideParam()
     {
@@ -34,7 +34,7 @@ class NumberTest extends PHPUnit_Framework_TestCase
     }
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Util\Number::zeroFill
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Util\Number::zeroFill
      */
     public function zeroFillMustBeReturnExactLengthWithFillSideParam()
     {
@@ -45,7 +45,7 @@ class NumberTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Util\Number::zeroFill
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Util\Number::zeroFill
      */
     public function zeroFillMustBeReturnExactStringWhenLengthIsEqualsWithFillSideParam()
     {
@@ -56,7 +56,7 @@ class NumberTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Util\Number::zeroFill
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Util\Number::zeroFill
      * @expectedException \InvalidArgumentException
      */
     public function zeroFillThrowsExceptionWhenValueLengthIsGreaterThanLength()
@@ -66,7 +66,7 @@ class NumberTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Util\Number::zeroFill
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Util\Number::zeroFill
      */
     public function zeroFillThrowsExceptionWithoutParams()
     {

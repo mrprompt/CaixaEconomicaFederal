@@ -43,7 +43,7 @@ class ChargeTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Charge::getCharging()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Charge::getCharging()
      */
     public function getChargingReturnChargingAttribute()
     {
@@ -56,7 +56,7 @@ class ChargeTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Charge::setCharging()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Charge::setCharging()
      */
     public function setChargingReturnNull()
     {
@@ -65,7 +65,7 @@ class ChargeTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Charge::setCharging()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Charge::setCharging()
      * @expectedException \InvalidArgumentException
      */
     public function setChargingThrowsExceptionWhenNotValidChargingType()
@@ -75,7 +75,7 @@ class ChargeTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Charge::getOccurrence()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Charge::getOccurrence()
      */
     public function getOccurrenceReturnOccurrenceAttribute()
     {
@@ -88,7 +88,7 @@ class ChargeTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Charge::setOccurrence()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Charge::setOccurrence()
      */
     public function setOccurrenceReturnNull()
     {

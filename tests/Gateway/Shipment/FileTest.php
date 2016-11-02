@@ -54,8 +54,8 @@ class FileTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \CaixaEconomicaFederal\Gateway\Shipment\File::getCart()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::getCart()
      */
     public function getCartMustBeReturnCartAttribute()
     {
@@ -68,8 +68,8 @@ class FileTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \CaixaEconomicaFederal\Gateway\Shipment\File::setCart()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::setCart()
      */
     public function setCartMustBeReturnCartAttribute()
     {
@@ -81,8 +81,8 @@ class FileTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \CaixaEconomicaFederal\Gateway\Shipment\File::save()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::save()
      */
     public function save()
     {
@@ -102,8 +102,8 @@ class FileTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \CaixaEconomicaFederal\Gateway\Shipment\File::read()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::read()
      */
     public function read()
     {

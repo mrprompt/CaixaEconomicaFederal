@@ -42,8 +42,8 @@ class SequenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Sequence::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Sequence::getValue()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence::getValue()
      */
     public function getValueReturnValueAttribute()
     {
@@ -54,9 +54,9 @@ class SequenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Sequence::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Sequence::setValue()
-     * @covers \CaixaEconomicaFederal\Common\Base\Sequence::getValue()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence::setValue()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence::getValue()
      */
     public function setValueModifyValueAttribute()
     {
@@ -67,8 +67,8 @@ class SequenceTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Sequence::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Sequence::setValue()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence::setValue()
      * @expectedException InvalidArgumentException
      */
     public function setValueOnlyAcceptIntegerValue()

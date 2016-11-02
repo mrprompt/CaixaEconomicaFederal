@@ -45,7 +45,7 @@ class CartTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Cart::addItem()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Cart::addItem()
      */
     public function addItem()
     {
@@ -58,7 +58,7 @@ class CartTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Cart::removeItem()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Cart::removeItem()
      */
     public function removeItem()
     {
@@ -70,7 +70,7 @@ class CartTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Cart::removeItem()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Cart::removeItem()
      * @expectedException \InvalidArgumentException
      */
     public function removeItemAbsentThrowsException()

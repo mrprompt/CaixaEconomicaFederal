@@ -44,8 +44,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::getDetails()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::getDetails()
      */
     public function getDetailsReturnDetailsAttribute()
     {
@@ -54,8 +54,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::setDetails()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::setDetails()
      */
     public function setDetailsMustBeReturnNull()
     {
@@ -66,8 +66,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::addDetail()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::addDetail()
      */
     public function addDetailMustBeReturnNull()
     {
@@ -89,8 +89,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::getRate()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::getRate()
      */
     public function getRateReturnRatesAttribute()
     {
@@ -103,8 +103,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::setRate()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::setRate()
      */
     public function setRateMustBeReturnNull()
     {
@@ -115,8 +115,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::getBankAccount()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::getBankAccount()
      */
     public function getBankAccountReturnBankaccountsAttribute()
     {
@@ -129,8 +129,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::setBankAccount()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::setBankAccount()
      */
     public function setBankAccountMustBeReturnNull()
     {
@@ -141,8 +141,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::getAssignor()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::getAssignor()
      */
     public function getAssignorReturnAssignorsAttribute()
     {
@@ -155,8 +155,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::setAssignor()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::setAssignor()
      */
     public function setAssignorMustBeReturnNull()
     {
@@ -167,8 +167,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::getNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::getNumber()
      */
     public function getNumberReturnNumbersAttribute()
     {
@@ -181,8 +181,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::__construct()
-     * @covers \CaixaEconomicaFederal\Common\Base\Billet::setNumber()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Billet::setNumber()
      */
     public function setNumberMustBeReturnNull()
     {

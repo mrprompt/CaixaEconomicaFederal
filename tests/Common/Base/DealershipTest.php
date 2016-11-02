@@ -40,7 +40,7 @@ class DealershipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Dealership::getCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Dealership::getCode()
      */
     public function getCodeReturnCodeAttribute()
     {
@@ -51,7 +51,7 @@ class DealershipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Dealership::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Dealership::setCode()
      */
     public function setCodeMustBeReturnNull()
     {
@@ -60,7 +60,7 @@ class DealershipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Dealership::setCode()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Dealership::setCode()
      * @expectedException \InvalidArgumentException
      */
     public function setCodeThrowsExceptionWhenExceedMaxLengh()
@@ -70,7 +70,7 @@ class DealershipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Dealership::getName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Dealership::getName()
      */
     public function getNameReturnNameAttribute()
     {
@@ -81,7 +81,7 @@ class DealershipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Dealership::setName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Dealership::setName()
      */
     public function setNameMustBeReturnNull()
     {
@@ -90,7 +90,7 @@ class DealershipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \CaixaEconomicaFederal\Common\Base\Dealership::setName()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Dealership::setName()
      * @expectedException \InvalidArgumentException
      */
     public function setNameThrowsExceptionWhenEmpty()
