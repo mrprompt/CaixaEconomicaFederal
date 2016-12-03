@@ -9,6 +9,7 @@ use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
 use DateTime;
 use Mockery as m;
 use PHPUnit_Framework_TestCase;
+use org\bovigo\vfs\vfsStream;
 
 /**
  * Billet test case.
@@ -26,6 +27,21 @@ class BilletTest extends PHPUnit_Framework_TestCase
     private $file;
 
     /**
+     * @var \org\bovigo\vfs\vfsStreamDirectory
+     */
+    private static $root;
+
+    /**
+     * Boostrap
+     */
+    public static function setUpBeforeClass()
+    {
+        parent::setUpBeforeClass();
+
+        self::$root = vfsStream::setup();
+    }
+
+    /**
      * Prepares the environment before running a test.
      */
     protected function setUp()
@@ -36,7 +52,7 @@ class BilletTest extends PHPUnit_Framework_TestCase
             $this->customerMock(),
             $this->sequenceMock(),
             DateTime::createFromFormat('d-m-Y', '27-05-2015'),
-            __DIR__ . '/resources'
+            self::$root->url()
         );
     }
 
@@ -52,8 +68,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::getCart()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Billet::getCart()
      */
     public function getCartMustBeReturnCartAttribute()
     {
@@ -66,8 +82,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::setCart()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Billet::setCart()
      */
     public function setCartMustBeReturnCartAttribute()
     {
@@ -79,8 +95,8 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::save()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Billet::save()
      */
     public function save()
     {
@@ -100,8 +116,9 @@ class BilletTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::read()
+     * @depends save
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Billet::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Billet::read()
      */
     public function read()
     {

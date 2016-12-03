@@ -5,12 +5,11 @@ use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File;
 use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Footer;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Header;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
 use DateTime;
 use Mockery as m;
 use PHPUnit_Framework_TestCase;
+use org\bovigo\vfs\vfsStream;
 
 /**
  * file test case.
@@ -28,6 +27,21 @@ class FileTest extends PHPUnit_Framework_TestCase
     private $file;
 
     /**
+     * @var \org\bovigo\vfs\vfsStreamDirectory
+     */
+    private static $root;
+
+    /**
+     * Boostrap
+     */
+    public static function setUpBeforeClass()
+    {
+        parent::setUpBeforeClass();
+
+        self::$root = vfsStream::setup();
+    }
+
+    /**
      * Prepares the environment before running a test.
      */
     protected function setUp()
@@ -38,7 +52,7 @@ class FileTest extends PHPUnit_Framework_TestCase
             $this->customerMock(),
             $this->sequenceMock(),
             DateTime::createFromFormat('d-m-Y', '27-05-2015'),
-            __DIR__ . '/resources'
+            self::$root->url()
         );
     }
 
@@ -98,22 +112,5 @@ class FileTest extends PHPUnit_Framework_TestCase
         $output = $this->file->save();
 
         $this->assertFileExists($output);
-    }
-
-    /**
-     * @test
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::read()
-     */
-    public function read()
-    {
-        $this->modifyAttribute($this->file, 'cart', new Cart());
-
-        $result = $this->file->read();
-
-        $this->assertTrue(is_array($result));
-        $this->assertInstanceOf(Header::class, $result[0]);
-        $this->assertInstanceOf(Cart::class, $result[1]);
-        $this->assertInstanceOf(Footer::class, $result[2]);
     }
 }

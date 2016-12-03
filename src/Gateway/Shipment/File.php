@@ -60,6 +60,16 @@ final class File
     protected $storage;
 
     /**
+     * @var string
+     */
+    protected $header;
+
+    /**
+     * @var string
+     */
+    protected $footer;
+
+    /**
      * @param Customer $customer
      * @param Sequence $sequence
      * @param DateTime $today
@@ -122,7 +132,7 @@ final class File
      */
     public function save()
     {
-        /* @var $item \CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail */
+        /* @var $item \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail */
         $item       = $this->cart->offsetGet(0);
 
         /* @var filename string */
@@ -162,10 +172,10 @@ final class File
             'numero_sequencial_arquivo' => $this->sequence->getValue(),
         ]);
 
-        /* @var $parcels \CaixaEconomicaFederal\Common\Base\Parcels */
+        /* @var $parcels \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcels */
         $parcels = $item->getParcels();
 
-        /* @var $parcel \CaixaEconomicaFederal\Common\Base\Parcel */
+        /* @var $parcel \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel */
         foreach ($parcels as $parcel) {
             /* @var $purchaser Purchaser */
             $purchaser  = $item->getPurchaser();
@@ -218,102 +228,5 @@ final class File
         $file->save($outputFile);
 
         return $outputFile;
-    }
-
-    /**
-     * Read a return file
-     *
-     * @param string $file
-     * @return array [Header, Detail, Footer]
-     * @throws \Exception
-     */
-    public function read($file = null)
-    {
-        $filename       = $file ? $file : $this->createFilename() . '.RET';
-        $inputFile      = $this->storage . DIRECTORY_SEPARATOR . $filename;
-
-        /* @var $cnab \Cnab\Factory */
-        $cnab           = new \Cnab\Factory();
-        $file           = $cnab->createRetorno($inputFile);
-        $details        = $file->listDetalhes();
-
-        /* @var $detail \Cnab\Retorno\Cnab240\Detalhe */
-        foreach($details as $detail) {
-            $result = [
-                'cliente'           => $this->customer->getCode(),
-                'cobranca'          => Charge::BILLET,
-                'ocorrencia'        => Occurrence::INSERT,
-                'identificador'     => $detail->getNumeroDocumento(),
-                'autorizacao'       => $detail->getNossoNumero(),
-                'parcelas'          => [
-                    [
-                        'vencimento' => ($detail->getDataVencimento() ? $detail->getDataVencimento()->format('dmY') : null),
-                        'valor'      => $detail->getValorRecebido(),
-                        'quantidade' => 1,  // quantidade de parcelas do bloqueto
-                        'situacao'   => $detail->isBaixa()
-                    ],
-                ],
-                'boleto'            => [
-                    'documento'         => $detail->getNumeroDocumento(),
-                    'banco'             => [
-                        'codigo'        => Bank::CAIXA_ECONOMICA_FEDERAL,
-                        'agencia'       => $detail->getAgencia(),
-                        'digito'        => $detail->getAgenciaDv(),
-                        'conta'         => [
-                            'numero'    => $detail->getAgenciaCobradora(),
-                            'digito'    => $detail->getAgenciaCobradoraDac(),
-                            'operacao'  => 003,
-                        ]
-                    ],
-                ],
-            ];
-
-            $this->cart->addItem( Factory::createDetailFromArray($result) );
-        }
-
-        $this->header = $this->getHeaderFromFile();
-        $this->footer = $this->getFooterFromFile();
-
-        return [
-            $this->header,
-            $this->cart,
-            $this->footer
-        ];
-    }
-
-    /**
-     * @return Header
-     */
-    private function getHeaderFromFile()
-    {
-        $header = new Header(
-            $this->cart->offsetGet(0)->getCustomer(),
-            $this->cart->offsetGet(0)->getSequence(),
-            $this->now
-        );
-
-        return $header;
-    }
-
-    /**
-     * @return Footer
-     */
-    private function getFooterFromFile()
-    {
-        $sum = 0;
-
-        foreach ($this->cart as $item) {
-            foreach ($item->getParcels() as $item) {
-                $sum += $item->getPrice();
-            }
-        }
-
-        $footer = new Footer(
-            $sum,
-            $this->cart->count(),
-            $this->cart->offsetGet(0)->getSequence()
-        );
-
-        return $footer;
     }
 }

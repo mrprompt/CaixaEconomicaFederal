@@ -3,12 +3,13 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Shipment;
 
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Billet;
+use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip;
 use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
 use DateTime;
 use Mockery as m;
 use PHPUnit_Framework_TestCase;
+use org\bovigo\vfs\vfsStream;
 
 /**
  * Payment Slip test case.
@@ -26,17 +27,32 @@ class PaymentSlipTest extends PHPUnit_Framework_TestCase
     private $file;
 
     /**
+     * @var \org\bovigo\vfs\vfsStreamDirectory
+     */
+    private static $root;
+
+    /**
+     * Boostrap
+     */
+    public static function setUpBeforeClass()
+    {
+        parent::setUpBeforeClass();
+
+        self::$root = vfsStream::setup();
+    }
+
+    /**
      * Prepares the environment before running a test.
      */
     protected function setUp()
     {
         parent::setUp();
 
-        $this->file = new Billet(
+        $this->file = new PaymentSlip(
             $this->customerMock(),
             $this->sequenceMock(),
             DateTime::createFromFormat('d-m-Y', '27-05-2015'),
-            __DIR__ . '/resources'
+            self::$root->url()
         );
     }
 
@@ -52,8 +68,8 @@ class PaymentSlipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::getCart()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip::getCart()
      */
     public function getCartMustBeReturnCartAttribute()
     {
@@ -66,8 +82,8 @@ class PaymentSlipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::setCart()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip::setCart()
      */
     public function setCartMustBeReturnCartAttribute()
     {
@@ -79,8 +95,8 @@ class PaymentSlipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::save()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip::save()
      */
     public function save()
     {
@@ -100,8 +116,8 @@ class PaymentSlipTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::__construct()
-     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File::read()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip::__construct()
+     * @covers \MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip::read()
      */
     public function read()
     {
