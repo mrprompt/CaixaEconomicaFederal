@@ -4,14 +4,14 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Consumer Unity test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class ConsumerUnityTest extends PHPUnit_Framework_TestCase
+class ConsumerUnityTest extends TestCase
 {
     use ChangeProtectedAttribute;
 

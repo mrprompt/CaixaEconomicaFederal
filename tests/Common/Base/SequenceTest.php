@@ -4,14 +4,14 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Sequence test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class SequenceTest extends PHPUnit_Framework_TestCase
+class SequenceTest extends TestCase
 {
     use ChangeProtectedAttribute;
 

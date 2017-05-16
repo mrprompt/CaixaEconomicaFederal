@@ -4,14 +4,14 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Charge;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Charge test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class ChargeTest extends PHPUnit_Framework_TestCase
+class ChargeTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use Mock;

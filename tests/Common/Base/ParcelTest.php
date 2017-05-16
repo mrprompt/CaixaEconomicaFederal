@@ -5,14 +5,14 @@ use MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use DateTime;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Parcel test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class ParcelTest extends PHPUnit_Framework_TestCase
+class ParcelTest extends TestCase
 {
     use ChangeProtectedAttribute;
 

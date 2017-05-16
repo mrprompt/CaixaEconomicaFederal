@@ -4,14 +4,14 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Phone;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Phone test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class PhoneTest extends PHPUnit_Framework_TestCase
+class PhoneTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use Mock;

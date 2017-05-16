@@ -2,14 +2,14 @@
 namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Util;
 
 use MrPrompt\CaixaEconomicaFederal\Common\Util\Number;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Number test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class NumberTest extends PHPUnit_Framework_TestCase
+class NumberTest extends TestCase
 {
     /**
      * @test

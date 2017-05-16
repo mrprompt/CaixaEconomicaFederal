@@ -4,14 +4,14 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Email;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Email test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class EmailTest extends PHPUnit_Framework_TestCase
+class EmailTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use Mock;

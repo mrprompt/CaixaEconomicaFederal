@@ -4,14 +4,14 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Shipment\Partial;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock as CaixaEconomicaFederalMock;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Detail test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class DetailTest extends PHPUnit_Framework_TestCase
+class DetailTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use CaixaEconomicaFederalMock;

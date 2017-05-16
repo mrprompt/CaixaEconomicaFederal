@@ -5,14 +5,14 @@ use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Footer;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock as CaixaEconomicaFederalMock;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Footer test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class FooterTest extends PHPUnit_Framework_TestCase
+class FooterTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use CaixaEconomicaFederalMock;

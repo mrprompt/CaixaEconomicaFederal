@@ -7,14 +7,14 @@ use MrPrompt\CaixaEconomicaFederal\Gateway\Received\Partial\Header;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock as CaixaEconomicaFederalMock;
 use DateTime;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Header test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class HeaderTest extends PHPUnit_Framework_TestCase
+class HeaderTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use CaixaEconomicaFederalMock;
@@ -71,7 +71,7 @@ class HeaderTest extends PHPUnit_Framework_TestCase
      */
     public function getCreated()
     {
-        $this->assertEquals(new DateTime(), $this->header->getCreated());
+        $this->assertInstanceOf(\DateTime::class, $this->header->getCreated());
     }
 
     /**

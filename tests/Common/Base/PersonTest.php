@@ -5,14 +5,14 @@ use MrPrompt\CaixaEconomicaFederal\Common\Base\Address;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Person;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Person test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class PersonTest extends PHPUnit_Framework_TestCase
+class PersonTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use Mock;
@@ -285,12 +285,11 @@ class PersonTest extends PHPUnit_Framework_TestCase
      * @test
      * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::__construct()
      * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Person::setPerson()
+     * @expectedException \InvalidArgumentException
      */
     public function setPersonThrowsExceptionWhenEmpty()
     {
         $result = $this->person->setPerson('');
-
-        $this->assertNull($result);
     }
 
     /**

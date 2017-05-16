@@ -5,14 +5,14 @@ use MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Bank test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class BankAccountTest extends PHPUnit_Framework_TestCase
+class BankAccountTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use Mock;

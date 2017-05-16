@@ -3,14 +3,14 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Address;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Address test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class AddressTest extends PHPUnit_Framework_TestCase
+class AddressTest extends TestCase
 {
     use ChangeProtectedAttribute;
 

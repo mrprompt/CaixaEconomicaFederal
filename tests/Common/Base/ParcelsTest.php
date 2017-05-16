@@ -5,14 +5,14 @@ use MrPrompt\CaixaEconomicaFederal\Common\Base\Parcels;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Parcels test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class ParcelsTest extends PHPUnit_Framework_TestCase
+class ParcelsTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use Mock;

@@ -4,14 +4,14 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Customer;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Customer test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class CustomerTest extends PHPUnit_Framework_TestCase
+class CustomerTest extends TestCase
 {
     use ChangeProtectedAttribute;
 
@@ -214,10 +214,11 @@ class CustomerTest extends PHPUnit_Framework_TestCase
     /**
      * @test
      * @covers \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer::setHelpfulMaturity()
+     * @expectedException \InvalidArgumentException
      */
-    public function setHelpfulMaturityReturnNullWhenReceiveEmpty()
+    public function setHelpfulMaturityThrowsExceptionWhenReceiveEmpty()
     {
-        $this->assertNull($this->customer->setHelpfulMaturity(''));
+        $this->customer->setHelpfulMaturity('');
     }
 
     /**

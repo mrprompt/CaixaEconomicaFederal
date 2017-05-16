@@ -5,14 +5,14 @@ use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Cart test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class CartTest extends \PHPUnit_Framework_TestCase
+class CartTest extends TestCase
 {
     use ChangeProtectedAttribute;
 

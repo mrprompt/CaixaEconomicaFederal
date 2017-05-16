@@ -8,7 +8,7 @@ use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
 use DateTime;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use org\bovigo\vfs\vfsStream;
 
 /**
@@ -16,7 +16,7 @@ use org\bovigo\vfs\vfsStream;
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class PaymentSlipTest extends PHPUnit_Framework_TestCase
+class PaymentSlipTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use Mock;

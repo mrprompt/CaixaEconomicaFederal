@@ -9,14 +9,14 @@ use MrPrompt\CaixaEconomicaFederal\Gateway\Received\Partial\Header;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
 use DateTime;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * file test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class FileTest extends PHPUnit_Framework_TestCase
+class FileTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use Mock;

@@ -5,14 +5,14 @@ use MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use DateTime;
 use Mockery;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * CreditCard test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class CreditCardTest extends PHPUnit_Framework_TestCase
+class CreditCardTest extends TestCase
 {
     use ChangeProtectedAttribute;
 

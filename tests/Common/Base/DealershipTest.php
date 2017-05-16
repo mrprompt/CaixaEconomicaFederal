@@ -4,14 +4,14 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Dealership;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use Mockery as m;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Dealership test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class DealershipTest extends PHPUnit_Framework_TestCase
+class DealershipTest extends TestCase
 {
     use ChangeProtectedAttribute;
 

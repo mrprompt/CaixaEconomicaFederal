@@ -5,14 +5,14 @@ use MrPrompt\CaixaEconomicaFederal\Common\Base\Billet;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail;
 use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Billet test case.
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class BilletTest extends PHPUnit_Framework_TestCase
+class BilletTest extends TestCase
 {
     use ChangeProtectedAttribute;
     use Mock;
