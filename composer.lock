@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f672c02f67913d22b75f6da17eaef6ee",
+    "content-hash": "5f4f6ab3834291418199623d0c530ad0",
     "packages": [
         {
             "name": "andersondanilo/cnab_php",
