@@ -6,12 +6,13 @@
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
+use MrPrompt\CaixaEconomicaFederal\Factory;
+use MrPrompt\CaixaEconomicaFederal\Shipment\File;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
+use MrPrompt\CaixaEconomicaFederal\Common\Base\Charge;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Factory;
 
-require __DIR__ . '/../bootstrap.php';
+require __DIR__ . '/bootstrap.php';
 
 /* @var $today \DateTime */
 $today      = new DateTime();
@@ -23,7 +24,7 @@ $cart       = new Cart();
 $row      = require __DIR__ . '/cart.php';
 
 foreach ($row as $linha) {
-    if ($linha['cobranca'] !== \CaixaEconomicaFederal\Common\Base\Charge::BILLET) {
+    if ($linha['cobranca'] !== Charge::BILLET) {
         continue;
     }
 

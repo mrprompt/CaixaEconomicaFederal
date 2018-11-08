@@ -3,8 +3,8 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Billet;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail;
-use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
+use MrPrompt\CaixaEconomicaFederal\Shipment\Partial\Detail;
+use MrPrompt\CaixaEconomicaFederal\Tests\Mock;
 use PHPUnit\Framework\TestCase;
 
 /**

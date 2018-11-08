@@ -3,7 +3,7 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Charge;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
-use MrPrompt\CaixaEconomicaFederal\Tests\Gateway\Mock;
+use MrPrompt\CaixaEconomicaFederal\Tests\Mock;
 use PHPUnit\Framework\TestCase;
 
 /**

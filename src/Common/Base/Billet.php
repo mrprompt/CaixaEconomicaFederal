@@ -2,7 +2,7 @@
 namespace MrPrompt\CaixaEconomicaFederal\Common\Base;
 
 use ArrayObject;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail;
+use MrPrompt\CaixaEconomicaFederal\Shipment\Partial\Detail;
 
 /**
  * Credit card

@@ -9,10 +9,10 @@
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\PaymentSlip;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Factory;
+use MrPrompt\CaixaEconomicaFederal\Shipment\PaymentSlip;
+use MrPrompt\CaixaEconomicaFederal\Factory;
 
-require __DIR__ . '/../bootstrap.php';
+require __DIR__ . '/bootstrap.php';
 
 /* @var $today \DateTime */
 $today      = new DateTime();

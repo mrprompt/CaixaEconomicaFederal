@@ -3,7 +3,7 @@ namespace MrPrompt\CaixaEconomicaFederal\Tests\Common\Base;
 
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
 use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail;
+use MrPrompt\CaixaEconomicaFederal\Shipment\Partial\Detail;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 

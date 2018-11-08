@@ -6,11 +6,12 @@
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
+use MrPrompt\CaixaEconomicaFederal\Factory;
+use MrPrompt\CaixaEconomicaFederal\Received\File;
+use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
 use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Shipment\File;
-use MrPrompt\CaixaEconomicaFederal\Gateway\Factory;
 
-require __DIR__ . '/../bootstrap.php';
+require __DIR__ . '/bootstrap.php';
 
 try {
     /* @var $date \DateTime */
@@ -22,9 +23,9 @@ try {
     /* @var $customer \CaixaEconomicaFederal\Common\Base\Customer */
     $customer   = Factory::createCustomerFromArray(['cliente' => 759, 'identificador' => 39282]);
 
-    /* @var $importer \CaixaEconomicaFederal\Gateway\Shipment\File */
+    /* @var $importer \CaixaEconomicaFederal\Gateway\Received\File */
     $importer   = new File($customer, $sequence, $date, __DIR__ . '/recebidos');
-    $importer->setCart( new \CaixaEconomicaFederal\Common\Base\Cart() );
+    $importer->setCart( new Cart() );
 
     // importing file data
     $result     = $importer->read('000759_27082015_00001.RET');
