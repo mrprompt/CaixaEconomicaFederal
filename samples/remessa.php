@@ -17,7 +17,7 @@ require __DIR__ . '/bootstrap.php';
 /* @var $today \DateTime */
 $today      = new DateTime();
 
-/* @var $cart \CaixaEconomicaFederal\Common\Base\Cart */
+/* @var $cart \MrPrompt\CaixaEconomicaFederal\Common\Base\Cart */
 $cart       = new Cart();
 
 /* @var $row array */
@@ -28,7 +28,7 @@ foreach ($row as $linha) {
         continue;
     }
 
-    /* @var $item \CaixaEconomicaFederal\Gateway\Shipment\Partial\Detail */
+    /* @var $item \MrPrompt\CaixaEconomicaFederal\Shipment\Partial\Detail */
     $item = Factory::createDetailFromArray($linha);
 
     echo 'Tipo     : ', $item->getCharge()->getCharging(), PHP_EOL;
@@ -47,13 +47,13 @@ foreach ($row as $linha) {
 }
 
 try {
-    /* @var $sequence \CaixaEconomicaFederal\Common\Base\Sequence */
+    /* @var $sequence \MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence */
     $sequence   = new Sequence(1);
 
-    /* @var $customer \CaixaEconomicaFederal\Common\Base\Customer */
+    /* @var $customer \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer */
     $customer   = Factory::createCustomerFromArray(array_pop($row));
 
-    /* @var $exporter \CaixaEconomicaFederal\Gateway\Shipment\File */
+    /* @var $exporter \MrPrompt\CaixaEconomicaFederal\Shipment\File */
     $exporter   = new File($customer, $sequence, $today, __DIR__ . DIRECTORY_SEPARATOR . 'enviados');
     $exporter->setCart($cart);
 
