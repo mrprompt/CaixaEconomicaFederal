@@ -10,7 +10,7 @@ Geração de Boletos, Bloquetos e arquivos de Remessa CNAB240 - SIGCB para a Cai
 
 ## Dependências
 
-- PHP 5.6+
+- PHP 7.1+
 - [WkHtmlToPDF](http://wkhtmltopdf.org/)
 
 ## Instalação
