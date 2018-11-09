@@ -39,7 +39,7 @@
   "require": {
     "php"                       : "^7.1",
     "respect/validation"        : "^1.1.12",
-    "andersondanilo/cnab_php"   : "1.3.10"
+    "andersondanilo/cnab_php"   : "~1.3.10"
   },
   "require-dev": {
     "phpunit/phpunit": "^6.1.3",
