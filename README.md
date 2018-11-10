@@ -2,9 +2,10 @@ Caixa Econômica Federal
 =======================
 
 [![Build Status](https://travis-ci.org/mrprompt/CaixaEconomicaFederal.svg?branch=master)](https://travis-ci.org/mrprompt/CaixaEconomicaFederal)
-[![Code Climate](https://codeclimate.com/github/mrprompt/CaixaEconomicaFederal/badges/gpa.svg)](https://codeclimate.com/github/mrprompt/CaixaEconomicaFederal)
-[![Test Coverage](https://codeclimate.com/github/mrprompt/CaixaEconomicaFederal/badges/coverage.svg)](https://codeclimate.com/github/mrprompt/CaixaEconomicaFederal/coverage)
-[![Issue Count](https://codeclimate.com/github/mrprompt/CaixaEconomicaFederal/badges/issue_count.svg)](https://codeclimate.com/github/mrprompt/CaixaEconomicaFederal)
+[![Build Status](https://scrutinizer-ci.com/g/mrprompt/CaixaEconomicaFederal/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mrprompt/CaixaEconomicaFederal/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mrprompt/CaixaEconomicaFederal/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mrprompt/CaixaEconomicaFederal/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/mrprompt/CaixaEconomicaFederal/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mrprompt/CaixaEconomicaFederal/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/mrprompt/CaixaEconomicaFederal/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 Geração de Boletos, Bloquetos e arquivos de Remessa CNAB240 - SIGCB para a Caixa Econômica Federal.
 
