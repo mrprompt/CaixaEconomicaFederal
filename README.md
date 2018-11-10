@@ -16,7 +16,7 @@ Geração de Boletos, Bloquetos e arquivos de Remessa CNAB240 - SIGCB para a Cai
 ## Instalação
 
 ```
-composer.phar require mrprompt/CaixaEconomicaFederal
+composer require mrprompt/caixa-economica-federal
 ```
     
 ## Exemplos
