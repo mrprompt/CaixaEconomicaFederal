@@ -1,21 +1,21 @@
 <?php
 namespace MrPrompt\CaixaEconomicaFederal\Received\Partial;
 
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Authorization;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Billet;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Customer;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Parcels;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Purchaser;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Seller;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
+use MrPrompt\ShipmentCommon\Base\Authorization;
+use MrPrompt\ShipmentCommon\Base\Billet;
+use MrPrompt\ShipmentCommon\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\Customer;
+use MrPrompt\ShipmentCommon\Base\Parcels;
+use MrPrompt\ShipmentCommon\Base\Purchaser;
+use MrPrompt\ShipmentCommon\Base\Seller;
+use MrPrompt\ShipmentCommon\Base\Sequence;
 
 /**
  * File detail
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class Detail
+class Detail extends \stdClass
 {
     /**
      * Customer

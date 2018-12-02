@@ -1,8 +1,8 @@
 <?php
 namespace MrPrompt\CaixaEconomicaFederal\Shipment\Partial;
 
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Customer;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
+use MrPrompt\ShipmentCommon\Base\Customer;
+use MrPrompt\ShipmentCommon\Base\Sequence;
 use DateTime;
 
 /**

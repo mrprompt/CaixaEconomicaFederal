@@ -1,13 +1,13 @@
 <?php
 namespace MrPrompt\CaixaEconomicaFederal\Received;
 
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Bank;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Customer;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
-use MrPrompt\CaixaEconomicaFederal\Common\Util\Number;
+use MrPrompt\ShipmentCommon\Base\Bank;
+use MrPrompt\ShipmentCommon\Base\Cart;
+use MrPrompt\ShipmentCommon\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\Customer;
+use MrPrompt\ShipmentCommon\Base\Occurrence;
+use MrPrompt\ShipmentCommon\Base\Sequence;
+use MrPrompt\ShipmentCommon\Util\Number;
 use MrPrompt\CaixaEconomicaFederal\Factory;
 use MrPrompt\CaixaEconomicaFederal\Received\Partial\Footer;
 use MrPrompt\CaixaEconomicaFederal\Received\Partial\Header;
