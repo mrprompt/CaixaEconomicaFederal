@@ -8,16 +8,16 @@
  */
 use MrPrompt\CaixaEconomicaFederal\Factory;
 use MrPrompt\CaixaEconomicaFederal\Shipment\File;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
+use MrPrompt\ShipmentCommon\Base\Cart;
+use MrPrompt\ShipmentCommon\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\Sequence;
 
 require __DIR__ . '/bootstrap.php';
 
 /* @var $today \DateTime */
 $today      = new DateTime();
 
-/* @var $cart \MrPrompt\CaixaEconomicaFederal\Common\Base\Cart */
+/* @var $cart \MrPrompt\ShipmentCommon\Base\Cart */
 $cart       = new Cart();
 
 /* @var $row array */
@@ -47,10 +47,10 @@ foreach ($row as $linha) {
 }
 
 try {
-    /* @var $sequence \MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence */
+    /* @var $sequence \MrPrompt\ShipmentCommon\Base\Sequence */
     $sequence   = new Sequence(1);
 
-    /* @var $customer \MrPrompt\CaixaEconomicaFederal\Common\Base\Customer */
+    /* @var $customer \MrPrompt\ShipmentCommon\Base\Customer */
     $customer   = Factory::createCustomerFromArray(array_pop($row));
 
     /* @var $exporter \MrPrompt\CaixaEconomicaFederal\Shipment\File */
