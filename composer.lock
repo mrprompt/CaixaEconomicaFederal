@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f2c34001ad4f65ad2281e3e924c3476",
+    "content-hash": "52e17d68b038b1277676188c848a09d1",
     "packages": [
         {
             "name": "andersondanilo/cnab_php",
@@ -104,7 +104,7 @@
         },
         {
             "name": "mrprompt/shipmentcommon",
-            "version": "dev-master",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrprompt/ShipmentCommon.git",
@@ -1830,7 +1830,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mrprompt/shipmentcommon": 20,
         "mockery/mockery": 20
     },
     "prefer-stable": false,
