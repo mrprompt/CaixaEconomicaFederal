@@ -1,5 +1,5 @@
 <?php
-namespace MrPrompt\CaixaEconomicaFederal\Common\Util;
+namespace MrPrompt\CaixaEconomicaFederal\Tests;
 
 use ReflectionProperty;
 

@@ -1,8 +1,8 @@
 <?php
 namespace MrPrompt\CaixaEconomicaFederal\Tests\Shipment;
 
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
-use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
+use MrPrompt\ShipmentCommon\Base\Cart;
+use MrPrompt\CaixaEconomicaFederal\Tests\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Shipment\File;
 use MrPrompt\CaixaEconomicaFederal\Shipment\Partial\Detail;
 use MrPrompt\CaixaEconomicaFederal\Tests\Mock;

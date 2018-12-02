@@ -1,7 +1,7 @@
 <?php
 namespace MrPrompt\CaixaEconomicaFederal\Tests\Shipment\Partial;
 
-use MrPrompt\CaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
+use MrPrompt\CaixaEconomicaFederal\Tests\ChangeProtectedAttribute;
 use MrPrompt\CaixaEconomicaFederal\Client;
 use MrPrompt\CaixaEconomicaFederal\Shipment\Partial\Header;
 use MrPrompt\CaixaEconomicaFederal\Tests\Mock as CaixaEconomicaFederalMock;

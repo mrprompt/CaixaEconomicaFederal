@@ -1,26 +1,26 @@
 <?php
 namespace MrPrompt\CaixaEconomicaFederal;
 
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Address;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Authorization;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Bank;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\BankAccount;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Billet;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\ConsumerUnity;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\CreditCard;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Customer;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Document;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Email;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Holder;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Parcels;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Person;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Phone;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Purchaser;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Seller;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
+use MrPrompt\ShipmentCommon\Base\Address;
+use MrPrompt\ShipmentCommon\Base\Authorization;
+use MrPrompt\ShipmentCommon\Base\Bank;
+use MrPrompt\ShipmentCommon\Base\BankAccount;
+use MrPrompt\ShipmentCommon\Base\Billet;
+use MrPrompt\ShipmentCommon\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\ConsumerUnity;
+use MrPrompt\ShipmentCommon\Base\CreditCard;
+use MrPrompt\ShipmentCommon\Base\Customer;
+use MrPrompt\ShipmentCommon\Base\Document;
+use MrPrompt\ShipmentCommon\Base\Email;
+use MrPrompt\ShipmentCommon\Base\Holder;
+use MrPrompt\ShipmentCommon\Base\Occurrence;
+use MrPrompt\ShipmentCommon\Base\Parcel;
+use MrPrompt\ShipmentCommon\Base\Parcels;
+use MrPrompt\ShipmentCommon\Base\Person;
+use MrPrompt\ShipmentCommon\Base\Phone;
+use MrPrompt\ShipmentCommon\Base\Purchaser;
+use MrPrompt\ShipmentCommon\Base\Seller;
+use MrPrompt\ShipmentCommon\Base\Sequence;
 use MrPrompt\CaixaEconomicaFederal\Shipment\Partial\Detail;
 use DateTime;
 
@@ -39,7 +39,7 @@ abstract class Factory
     {
         $document = new Document();
         $document->setType(strlen($campos['documento']) === 11 ? Document::CPF : Document::CNPJ);
-        $document->setNumber($campos['documento']);
+        $document->setNumber((int) $campos['documento']);
 
         return $document;
     }
@@ -51,8 +51,8 @@ abstract class Factory
     public static function createCustomerFromArray(array $campos = [])
     {
         $customer = new Customer();
-        $customer->setCode($campos['cliente']);
-        $customer->setIdentityNumber($campos['identificador']);
+        $customer->setCode((int) $campos['cliente']);
+        $customer->setIdentityNumber((int) $campos['identificador']);
 
         return $customer;
     }
@@ -340,7 +340,7 @@ abstract class Factory
 
         if (array_key_exists('boleto', $campos)) {
             $billet->setBankAccount(self::createBankAccountFromArray($campos['boleto']));
-            $billet->setNumber($campos['boleto']['documento']);
+            $billet->setNumber((int) $campos['boleto']['documento']);
         }
 
         return $billet;

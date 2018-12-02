@@ -1,17 +1,17 @@
 <?php
 namespace MrPrompt\CaixaEconomicaFederal\Shipment;
 
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Address;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Bank;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Cart;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Customer;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Document;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Occurrence;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Purchaser;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Seller;
-use MrPrompt\CaixaEconomicaFederal\Common\Base\Sequence;
-use MrPrompt\CaixaEconomicaFederal\Common\Util\Number;
+use MrPrompt\ShipmentCommon\Base\Address;
+use MrPrompt\ShipmentCommon\Base\Bank;
+use MrPrompt\ShipmentCommon\Base\Cart;
+use MrPrompt\ShipmentCommon\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\Customer;
+use MrPrompt\ShipmentCommon\Base\Document;
+use MrPrompt\ShipmentCommon\Base\Occurrence;
+use MrPrompt\ShipmentCommon\Base\Purchaser;
+use MrPrompt\ShipmentCommon\Base\Seller;
+use MrPrompt\ShipmentCommon\Base\Sequence;
+use MrPrompt\ShipmentCommon\Util\Number;
 use MrPrompt\CaixaEconomicaFederal\Factory;
 use MrPrompt\CaixaEconomicaFederal\Shipment\Partial\Footer;
 use MrPrompt\CaixaEconomicaFederal\Shipment\Partial\Header;
@@ -172,10 +172,10 @@ final class File
             'numero_sequencial_arquivo' => $this->sequence->getValue(),
         ]);
 
-        /* @var $parcels \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcels */
+        /* @var $parcels \MrPrompt\ShipmentCommon\Base\Parcels */
         $parcels = $item->getParcels();
 
-        /* @var $parcel \MrPrompt\CaixaEconomicaFederal\Common\Base\Parcel */
+        /* @var $parcel \MrPrompt\ShipmentCommon\Base\Parcel */
         foreach ($parcels as $parcel) {
             /* @var $purchaser Purchaser */
             $purchaser  = $item->getPurchaser();
